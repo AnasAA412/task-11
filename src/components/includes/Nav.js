@@ -72,11 +72,11 @@ function Nav() {
   );
 }
 const NavContainer = styled.div`
-  background-color: #f9f8f8;
   height: 100vh;
   width: 16%;
 `;
 const NavLogo = styled.img`
+  width: 140px;
   margin-top: 50px;
   margin-left: 30px;
 `;

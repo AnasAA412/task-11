@@ -33,9 +33,8 @@ export default function Dashboard() {
 }
 
 const Wrapper = styled.div`
-  background-color: #f9f8f8;
   width: 70rem;
-  height: 130px;
+  
 `;
 const HeadNav = styled.ul`
   margin-top: 100px;
@@ -45,15 +44,14 @@ const HeadNav = styled.ul`
 const HeadList = styled.li``;
 const Settings = styled.div``;
 const NavImg = styled.img`
-  margin-bottom: 30px;
   margin-right: 10px;
   width: 30px;
 `;
 const NavImage = styled.img`
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  margin-bottom: 20px;
+
   margin-right: 10px;
 `;
 const DataLink = styled(Link)`
