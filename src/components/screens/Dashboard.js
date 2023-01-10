@@ -34,7 +34,6 @@ export default function Dashboard() {
 
 const Wrapper = styled.div`
   width: 70rem;
-  
 `;
 const HeadNav = styled.ul`
   margin-top: 100px;
