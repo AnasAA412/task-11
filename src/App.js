@@ -5,9 +5,10 @@ import Nav from "./components/includes/Nav";
 import styled from "styled-components";
 
 import OverView from "./components/screens/OverView";
-import GuestList from "./components/screens/GuestList";
+
 import TemperoryTraffic from "./components/screens/TemperoryTraffic";
 import CominSoon from "./components/screens/CominSoon";
+import Guestlist from "./components/screens/Guestlist";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />}>
               <Route path="/overview" element={<OverView />} />
-              <Route path="/guest-list" element={<GuestList />} />
+              <Route path="/guest-list" element={<Guestlist />} />
               <Route path="/temperory-traffic" element={<TemperoryTraffic />} />
             </Route>
 

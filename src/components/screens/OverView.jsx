@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Grapht from "./Grapht";
+import Guestlist from "../screens/Guestlist";
 
 function OverView() {
   return (
@@ -10,7 +12,7 @@ function OverView() {
             <ContainerIn>
               <Containertop>
                 <Img
-                  src={require("../../Assets/Rectangle 20695.jpg")}
+                  src={require("../../Assets/white icon.svg").default}
                   alt="logo"
                 />
                 <Tophead>Male Guest</Tophead>
@@ -33,7 +35,7 @@ function OverView() {
             <ContainerIn1>
               <Containertop>
                 <Img
-                  src={require("../../Assets/Rectangle 20695.jpg")}
+                  src={require("../../Assets/white icon2.svg").default}
                   alt="logo"
                 />
                 <Tophead>Female Guest</Tophead>
@@ -62,100 +64,8 @@ function OverView() {
         </OverviewtopContainer>
       </Container>
       <Containertt>
-        <OverviewbottomContainer>
-          <ProfileContainer>
-            <BottomHeader>
-              <Recent>Recently Guest</Recent>
-              <Seemore>See more</Seemore>
-            </BottomHeader>
-
-            <ProfileEdit>
-              <Profiletop>
-                <ProfileImg
-                  src={require("../../Assets/Rectangle 20695.jpg")}
-                  alt="logo"
-                />
-                <Profile>
-                  <ProfileName>Aisyah Namanya</ProfileName>
-                  <Time>2 minute ago</Time>
-                </Profile>
-                <DotImg
-                  src={
-                    require("../../Assets/bi_three-dots-vertical.svg").default
-                  }
-                  alt="logo"
-                />
-              </Profiletop>
-              <Editdiv>
-                <EditImg
-                  src={require("../../Assets/fa-solid_pen.svg").default}
-                  alt="logo"
-                />
-                <EditImg
-                  src={require("../../Assets/bxs_trash-alt.svg").default}
-                  alt="logo"
-                />
-              </Editdiv>
-            </ProfileEdit>
-
-            <ProfileEdit>
-              <Profiletop>
-                <ProfileImg
-                  src={require("../../Assets/Rectangle 20696.jpg")}
-                  alt="logo"
-                />
-                <Profile>
-                  <ProfileName> Caak Hanndaoko</ProfileName>
-                  <Time>6 minute ago</Time>
-                </Profile>
-                <DotImg
-                  src={
-                    require("../../Assets/bi_three-dots-vertical.svg").default
-                  }
-                  alt="logo"
-                />
-              </Profiletop>
-              <Editdiv>
-                <EditImg
-                  src={require("../../Assets/fa-solid_pen.svg").default}
-                  alt="logo"
-                />
-                <EditImg
-                  src={require("../../Assets/bxs_trash-alt.svg").default}
-                  alt="logo"
-                />
-              </Editdiv>
-            </ProfileEdit>
-            <ProfileEdit>
-              <Profiletop>
-                <ProfileImg
-                  src={require("../../Assets/Rectangle 20695.jpg")}
-                  alt="logo"
-                />
-                <Profile>
-                  <ProfileName>Aisyah Namanya</ProfileName>
-                  <Time>2 minute ago</Time>
-                </Profile>
-                <DotImg
-                  src={
-                    require("../../Assets/bi_three-dots-vertical.svg").default
-                  }
-                  alt="logo"
-                />
-              </Profiletop>
-              <Editdiv>
-                <EditImg
-                  src={require("../../Assets/fa-solid_pen.svg").default}
-                  alt="logo"
-                />
-                <EditImg
-                  src={require("../../Assets/bxs_trash-alt.svg").default}
-                  alt="logo"
-                />
-              </Editdiv>
-            </ProfileEdit>
-          </ProfileContainer>
-        </OverviewbottomContainer>
+        <Guestlist />
+        <Grapht />
       </Containertt>
     </>
   );
@@ -165,8 +75,10 @@ const OverviewtopContainer = styled.div`
 `;
 const Containertt = styled.div`
   background-color: #f9f8f8;
-  margin-top: -30px;
-  height: 490px;
+  margin-top: -10px;
+  height: 80vh;
+  width: 100%;
+  display: flex;
 `;
 const Container = styled.div`
   background-color: #f9f8f8;
@@ -221,10 +133,13 @@ const Containertop = styled.div`
   display: flex;
 `;
 const Img = styled.img`
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  padding: 5px 5px;
+  background-color: #000;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: 10px;
 `;
 const Tophead = styled.h2`
   font-size: 17px;
