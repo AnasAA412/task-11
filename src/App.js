@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/screens/Dashboard";
+import Nav from "./components/includes/Nav";
+import styled from "styled-components";
+import Accounts from "./components/screens/Accounts";
+import Products from "./components/screens/Products";
+import OverView from "./components/screens/OverView";
+import GuestList from "./components/screens/GuestList";
+import TemperoryTraffic from "./components/screens/TemperoryTraffic";
+import CominSoon from "./components/screens/CominSoon";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainContainer>
+        <Router>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Dashboard />}>
+              <Route path="/overview" element={<OverView />} />
+              <Route path="/guest-list" element={<GuestList />} />
+              <Route path="/temperory-traffic" element={<TemperoryTraffic />} />
+            </Route>
+
+            <Route path="*" element={<CominSoon />} />
+          </Routes>
+        </Router>
+      </MainContainer>
+    </>
   );
 }
-
+const MainContainer = styled.div`
+  display: flex;
+`;
 export default App;
