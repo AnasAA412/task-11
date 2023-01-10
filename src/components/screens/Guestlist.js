@@ -172,6 +172,7 @@ const GuestNameDiv = styled.div`
 const GuestNameInput = styled.input`
   font-size: 16px;
   font-weight: bold;
+  border: none;
 `;
 const GuestTimeP = styled.p``;
 
@@ -180,7 +181,7 @@ const GuestRight = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-right: 15px;
-  
+
   @media all and (max-width: 360px) {
     position: relative;
     right: 30px;
@@ -188,7 +189,7 @@ const GuestRight = styled.div`
 `;
 const EditSpan = styled.span`
   margin-right: 10px;
-  color: #fff;
+
   @media all and (max-width: 1380px) {
     display: none;
   }
@@ -202,10 +203,10 @@ const EditSpan = styled.span`
 const Editimg = styled.img`
   width: 100%;
   display: block;
-  color: #fff;
 `;
 const DeleteSpan = styled.span`
   margin-right: 10px;
+
   @media all and (max-width: 1380px) {
     display: none;
   }

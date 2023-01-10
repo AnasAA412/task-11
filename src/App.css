@@ -6,6 +6,30 @@ ol {
   list-style: none;
   text-decoration: none;
 }
+
+blockquote {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+header,
+section,
+article,
+aside,
+nav,
+footer,
+address {
+  display: block;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +52,39 @@ ol {
   color: white;
 }
 
+a:hover,
+.submit:hover {
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+}
+
+.thumb {
+  display: block;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
 .App-link {
   color: #61dafb;
 }
@@ -39,4 +96,20 @@ ol {
   to {
     transform: rotate(360deg);
   }
+}
+
+.color1 {
+  background-color: #fff;
+}
+
+.coloractive {
+  background-color: #d2a2f7;
+}
+
+.hide {
+  display: none;
+}
+
+.show111 {
+  display: block;
 }
