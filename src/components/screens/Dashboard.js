@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   width: 70rem;
 `;
 const HeadNav = styled.ul`
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 `;

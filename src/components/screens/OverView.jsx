@@ -3,49 +3,171 @@ import styled from "styled-components";
 
 function OverView() {
   return (
-    <Container>
-      <ContainerBox>
-        <ContainerIn>
-          <Containertop>
-            <Img src={require("../../Assets/Rectangle 20695.jpg")} alt="logo" />
-            <Tophead>Male Guest</Tophead>
-          </Containertop>
-          <ContainerBottom>
-            <Total>
-              <TotalInvites>Total invites</TotalInvites>
-              <Totalcount>8,124</Totalcount>
-            </Total>
-            <Bar>|</Bar>
-            <Total>
-              <TotalCome>Total Come</TotalCome>
-              <Totalcount>4,204</Totalcount>
-            </Total>
-          </ContainerBottom>
-        </ContainerIn>
-      </ContainerBox>
+    <>
+      <Container>
+        <OverviewtopContainer>
+          <ContainerBox>
+            <ContainerIn>
+              <Containertop>
+                <Img
+                  src={require("../../Assets/Rectangle 20695.jpg")}
+                  alt="logo"
+                />
+                <Tophead>Male Guest</Tophead>
+              </Containertop>
+              <ContainerBottom>
+                <Total>
+                  <TotalInvites>Total invites</TotalInvites>
+                  <Totalcount>8,124</Totalcount>
+                </Total>
+                <Bar>|</Bar>
+                <Total>
+                  <TotalCome>Total Come</TotalCome>
+                  <Totalcount>4,204</Totalcount>
+                </Total>
+              </ContainerBottom>
+            </ContainerIn>
+          </ContainerBox>
 
-      <ContainerBox1>
-        <ContainerIn1>
-          <Containertop>
-            <Img src={require("../../Assets/Rectangle 20695.jpg")} alt="logo" />
-            <Tophead>Female Guest</Tophead>
-          </Containertop>
-          <ContainerBottom>
-            <Total>
-              <TotalInvites>Total invites</TotalInvites>
-              <Totalcount>9,620</Totalcount>
-            </Total>
-            <Bar>|</Bar>
-            <Total>
-              <TotalCome>Total Come</TotalCome>
-              <Totalcount>6,125</Totalcount>
-            </Total>
-          </ContainerBottom>
-        </ContainerIn1>
-      </ContainerBox1>
-    </Container>
+          <ContainerBox1>
+            <ContainerIn1>
+              <Containertop>
+                <Img
+                  src={require("../../Assets/Rectangle 20695.jpg")}
+                  alt="logo"
+                />
+                <Tophead>Female Guest</Tophead>
+              </Containertop>
+              <ContainerBottom>
+                <Total>
+                  <TotalInvites>Total invites</TotalInvites>
+                  <Totalcount>9,620</Totalcount>
+                </Total>
+                <Bar>|</Bar>
+                <Total>
+                  <TotalCome>Total Come</TotalCome>
+                  <Totalcount>6,125</Totalcount>
+                </Total>
+              </ContainerBottom>
+            </ContainerIn1>
+          </ContainerBox1>
+
+          <ContainerGraph>
+            <Traffic>Visitor traffic</Traffic>
+            <GraphImg
+              src={require("../../Assets/Group 3465418.svg").default}
+              alt="logo"
+            />
+          </ContainerGraph>
+        </OverviewtopContainer>
+      </Container>
+      <Containertt>
+        <OverviewbottomContainer>
+          <ProfileContainer>
+            <BottomHeader>
+              <Recent>Recently Guest</Recent>
+              <Seemore>See more</Seemore>
+            </BottomHeader>
+
+            <ProfileEdit>
+              <Profiletop>
+                <ProfileImg
+                  src={require("../../Assets/Rectangle 20695.jpg")}
+                  alt="logo"
+                />
+                <Profile>
+                  <ProfileName>Aisyah Namanya</ProfileName>
+                  <Time>2 minute ago</Time>
+                </Profile>
+                <DotImg
+                  src={
+                    require("../../Assets/bi_three-dots-vertical.svg").default
+                  }
+                  alt="logo"
+                />
+              </Profiletop>
+              <Editdiv>
+                <EditImg
+                  src={require("../../Assets/fa-solid_pen.svg").default}
+                  alt="logo"
+                />
+                <EditImg
+                  src={require("../../Assets/bxs_trash-alt.svg").default}
+                  alt="logo"
+                />
+              </Editdiv>
+            </ProfileEdit>
+
+            <ProfileEdit>
+              <Profiletop>
+                <ProfileImg
+                  src={require("../../Assets/Rectangle 20696.jpg")}
+                  alt="logo"
+                />
+                <Profile>
+                  <ProfileName> Caak Hanndaoko</ProfileName>
+                  <Time>6 minute ago</Time>
+                </Profile>
+                <DotImg
+                  src={
+                    require("../../Assets/bi_three-dots-vertical.svg").default
+                  }
+                  alt="logo"
+                />
+              </Profiletop>
+              <Editdiv>
+                <EditImg
+                  src={require("../../Assets/fa-solid_pen.svg").default}
+                  alt="logo"
+                />
+                <EditImg
+                  src={require("../../Assets/bxs_trash-alt.svg").default}
+                  alt="logo"
+                />
+              </Editdiv>
+            </ProfileEdit>
+            <ProfileEdit>
+              <Profiletop>
+                <ProfileImg
+                  src={require("../../Assets/Rectangle 20695.jpg")}
+                  alt="logo"
+                />
+                <Profile>
+                  <ProfileName>Aisyah Namanya</ProfileName>
+                  <Time>2 minute ago</Time>
+                </Profile>
+                <DotImg
+                  src={
+                    require("../../Assets/bi_three-dots-vertical.svg").default
+                  }
+                  alt="logo"
+                />
+              </Profiletop>
+              <Editdiv>
+                <EditImg
+                  src={require("../../Assets/fa-solid_pen.svg").default}
+                  alt="logo"
+                />
+                <EditImg
+                  src={require("../../Assets/bxs_trash-alt.svg").default}
+                  alt="logo"
+                />
+              </Editdiv>
+            </ProfileEdit>
+          </ProfileContainer>
+        </OverviewbottomContainer>
+      </Containertt>
+    </>
   );
 }
+const OverviewtopContainer = styled.div`
+  display: flex;
+`;
+const Containertt = styled.div`
+  background-color: #f9f8f8;
+  margin-top: -30px;
+  height: 490px;
+`;
 const Container = styled.div`
   background-color: #f9f8f8;
   width: 100%;
@@ -54,7 +176,7 @@ const Container = styled.div`
 `;
 const Bar = styled.span`
   font-size: 33px;
-  
+
   margin-right: 20px;
 `;
 const ContainerIn = styled.div`
@@ -63,6 +185,24 @@ const ContainerIn = styled.div`
 const ContainerIn1 = styled.div`
   margin: 20px 50px 0px 50px;
 `;
+const ContainerGraph = styled.div`
+  width: 270px;
+  height: 170px;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: #fff;
+`;
+const Traffic = styled.h3`
+  margin-left: 80px;
+  font-size: 15px;
+  margin-bottom: 20px;
+`;
+const GraphImg = styled.img`
+  width: 55%;
+  margin: 70px;
+  margin-top: -60px;
+`;
+
 const ContainerBox = styled.div`
   margin: 20px;
   width: 330px;
@@ -106,5 +246,69 @@ const Totalcount = styled.h2`
 const TotalCome = styled.span`
   font-size: 10px;
 `;
+const OverviewbottomContainer = styled.div`
+  flex-wrap: wrap;
+  width: 330px;
+  height: 170px;
+  border-radius: 20px;
+  margin: 20px;
+`;
+const ProfileContainer = styled.div``;
+const BottomHeader = styled.div`
+  width: 140%;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: -20px;
+`;
+const Recent = styled.h3``;
+const Seemore = styled.span`
+  margin-top: 20px;
+  margin-left: 130px;
+`;
+const ProfileEdit = styled.div`
+  background-color: grey;
+  height: 70px;
+  border-radius: 20px;
+  margin-top: 20px;
+  position: relative;
+`;
 
+const Editdiv = styled.div`
+  padding-top: 20px;
+  padding-left: 240px;
+`;
+const Profiletop = styled.div`
+  background-color: #fff;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+`;
+const EditImg = styled.img`
+  margin-left: 10px;
+`;
+const Profile = styled.div``;
+const ProfileImg = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  margin-right: 30px;
+`;
+const ProfileName = styled.h3`
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: -0.5px;
+`;
+const Time = styled.span`
+  color: grey;
+  font-size: 13px;
+`;
+const DotImg = styled.img`
+  width: 50px;
+  height: 25px;
+  margin-left: 50px;
+  margin-top: 10px;
+`;
 export default OverView;
