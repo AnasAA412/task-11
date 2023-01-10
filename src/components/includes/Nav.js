@@ -14,7 +14,7 @@ function Nav() {
             src={require("../../Assets/akar-icons_dashboard.svg").default}
             alt="logo"
           />
-          <Link to="/">Dashboard</Link>
+          <Links to="/">Dashboard</Links>
         </NavList>
         <NavList>
           <NavImg
@@ -23,21 +23,21 @@ function Nav() {
             }
             alt="logo"
           />
-          <Link to="*">CateringStatus</Link>
+          <Links to="*">CateringStatus</Links>
         </NavList>
         <NavList>
           <NavImg
             src={require("../../Assets/bx_bar-chart-square.svg").default}
             alt="logo"
           />
-          <Link to="*">Guest traffic</Link>
+          <Links to="*">Guest traffic</Links>
         </NavList>
         <NavList>
           <NavImg
             src={require("../../Assets/ant-design_gift-outlined.svg").default}
             alt="logo"
           />
-          <Link to="*">Gifts</Link>
+          <Links to="*">Gifts</Links>
         </NavList>
         <NavHead>SETTINGS</NavHead>
         <NavList>
@@ -48,7 +48,7 @@ function Nav() {
             }
             alt="logo"
           />
-          <Link to="*">Account</Link>
+          <Links to="*">Account</Links>
         </NavList>
 
         <NavList>
@@ -56,7 +56,7 @@ function Nav() {
             src={require("../../Assets/clarity_wallet-line.svg").default}
             alt="logo"
           />
-          <Link to="*">Wallet</Link>
+          <Links to="*">Wallet</Links>
         </NavList>
         <NavList>
           <NavImg
@@ -65,19 +65,36 @@ function Nav() {
             }
             alt="logo"
           />
-          <Link to="*">Help & Support</Link>
+          <Links to="*">Help & Support</Links>
         </NavList>
       </NavContainer>
     </>
   );
 }
 const NavContainer = styled.div`
-  background-color: grey;
+  background-color: #f9f8f8;
   height: 100vh;
-  width: 18%;
+  width: 16%;
 `;
-const NavLogo = styled.img``;
-const NavImg = styled.img``;
+const NavLogo = styled.img`
+  margin-top: 50px;
+  margin-left: 30px;
+`;
+const NavImg = styled.img`
+  margin-right: 10px;
+  width: 19px;
+`;
 const NavList = styled.ul``;
-const NavHead = styled.h4``;
+const NavHead = styled.h4`
+  font-size: 12px;
+  color: grey;
+  margin-left: 30px;
+  margin-top: 40px;
+`;
+const Links = styled(Link)`
+  text-decoration: none;
+  color: #000;
+  align-items: center;
+  font-size: 15px;
+`;
 export default Nav;
