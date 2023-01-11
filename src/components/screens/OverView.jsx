@@ -76,15 +76,21 @@ const OverviewtopContainer = styled.div`
 const Containertt = styled.div`
   background-color: #f9f8f8;
   margin-top: -10px;
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   display: flex;
+  @media all and (max-width: 480px) {
+    flex-wrap: wrap;
+  }
 `;
 const Container = styled.div`
   background-color: #f9f8f8;
   width: 100%;
   height: 100%;
   display: flex;
+  @media all and (max-width: 769px) {
+    ${"" /* height: 90vh; */}
+  }
 `;
 const Bar = styled.span`
   font-size: 33px;
@@ -103,6 +109,9 @@ const ContainerGraph = styled.div`
   border-radius: 20px;
   margin: 20px;
   background-color: #fff;
+  @media all and (max-width: 480px) {
+    display: none;
+  }
 `;
 const Traffic = styled.h3`
   margin-left: 80px;

@@ -131,11 +131,11 @@ const GraphContainer = styled.section`
     background: #f9f8f8;
   }
   @media all and (max-width: 640px) {
-    width: 70%;
+    width: 120%;
+    background-color: #fff;
   }
   @media all and (max-width: 480px) {
     width: 100%;
-    content-visibility: auto;
   }
 `;
 const Charth3 = styled.h3`
@@ -145,8 +145,12 @@ const Charth3 = styled.h3`
     font-size: 25px;
     font-weight: bold;
   }
+
   @media all and (max-width: 768px) {
-    text-align: end;
+    margin-left: 40px;
+  }
+  @media all and (max-width: 480px) {
+    width:40%;
   }
 `;
 const BarChartBox = styled.section`
@@ -156,15 +160,15 @@ const BarChartBox = styled.section`
     width: 95%;
   }
   @media all and (max-width: 768px) {
-    width: 100%;
+    width: 90%;
     position: relative;
-    left: -105px;
+
+    background-color: #fff;
   }
   @media all and (max-width: 640px) {
-    left: 30px;
+    width: 120%;
   }
   @media all and (max-width: 480px) {
-    left: -20px;
   }
   @media all and (max-width: 360px) {
     left: -163px;
@@ -177,19 +181,26 @@ const GraphHead = styled.section`
   align-items: center;
   padding-top: 15px;
   @media all and (max-width: 768px) {
-    width: 135%;
+    width: 115%;
+    margin-left: 20px;
   }
   @media all and (max-width: 640px) {
-    flex-direction: row-reverse;
-    width: 100%;
+    margin-top: -10px;
+    width: 120%;
   }
 `;
 const GuestTop = styled.section`
   display: flex;
   align-items: center;
   @media all and (max-width: 1280px) {
-    flex-direction: column;
     align-items: flex-start;
+  }
+  @media all and (max-width: 640px) {
+    display: flex;
+    margin-left: 100px;
+  }
+  @media all and (max-width: 480px) {
+    width: 150%;
   }
 `;
 const TotalDiv = styled.div`
@@ -206,6 +217,9 @@ const TotalDiv = styled.div`
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  @media all and (max-width: 640px) {
+    margin-right: 20px;
   }
 `;
 const Tbox = styled.span`

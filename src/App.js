@@ -16,11 +16,10 @@ function App() {
       <MainContainer>
         <Router>
           <Nav />
+
           <Routes>
             <Route path="/" element={<Dashboard />}>
               <Route path="/overview" element={<OverView />} />
-              <Route path="/guest-list" element={<Guestlist />} />
-              <Route path="/temperory-traffic" element={<TemperoryTraffic />} />
             </Route>
 
             <Route path="*" element={<CominSoon />} />

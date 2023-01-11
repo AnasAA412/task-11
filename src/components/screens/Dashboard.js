@@ -1,61 +1,29 @@
 import React from "react";
-import "../../App.css";
-import { Link, Outlet } from "react-router-dom";
-import styled from "styled-components";
 
-export default function Dashboard() {
+import styled from "styled-components";
+import Header from "../includes/Header";
+
+import { Helmet } from "react-helmet";
+import OverView from "./OverView";
+import Guestlist from "./Guestlist";
+import Grapht from "./Grapht";
+
+function Dashboard() {
   return (
     <>
-      <Wrapper>
-        <nav>
-          <HeadNav>
-            <HeadList>
-              <DataLink to="overview">Overview</DataLink>
-              <DataLink to="guest-list">Guestlist</DataLink>
-              <DataLink to="temperory-traffic">Temperory traffic</DataLink>
-            </HeadList>
-            <Settings>
-              <NavImg
-                src={require("../../Assets/bxs_bell.svg").default}
-                alt="logo"
-              />
-              <NavImage
-                src={require("../../Assets/Rectangle 20695.jpg")}
-                alt="logo"
-              />
-            </Settings>
-          </HeadNav>
-          <Outlet />
-        </nav>
-      </Wrapper>
+      <Helmet>
+        <title>Dashboard</title>
+      </Helmet>
+      <Main>
+        <Header />
+
+        <OverView />
+      </Main>
     </>
   );
 }
+export default Dashboard;
 
-const Wrapper = styled.div`
-  width: 70rem;
-`;
-const HeadNav = styled.ul`
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-`;
-const HeadList = styled.li``;
-const Settings = styled.div``;
-const NavImg = styled.img`
-  margin-right: 10px;
-  width: 30px;
-`;
-const NavImage = styled.img`
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-
-  margin-right: 10px;
-`;
-const DataLink = styled(Link)`
-  text-decoration: none;
-  color: #000;
-  margin-right: 20px;
-  font-weight: 600;
+const Main = styled.section`
+  height: 200px;
 `;

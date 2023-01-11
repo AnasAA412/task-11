@@ -74,6 +74,12 @@ function Nav() {
 const NavContainer = styled.div`
   height: 100vh;
   width: 16%;
+  @media all and (max-width: 640px) {
+    width:26%;
+  }
+  @media all and (max-width: 480px) {
+    width:36%;
+  }
 `;
 const NavLogo = styled.img`
   width: 140px;
@@ -90,11 +96,18 @@ const NavHead = styled.h4`
   color: grey;
   margin-left: 30px;
   margin-top: 40px;
+  @media all and (max-width: 640px) {
+    width: 90px;
+  }
 `;
 const Links = styled(Link)`
   text-decoration: none;
   color: #000;
   align-items: center;
   font-size: 15px;
+  &:hover {
+    font-weight: 600;
+    color: #000;
+  }
 `;
 export default Nav;

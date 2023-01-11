@@ -121,8 +121,11 @@ const GuestListContainer = styled.ul`
   @media all and (max-width: 980px) {
     width: 75%;
   }
-  @media all and (max-width: 768px) {
-    width: 100%;
+  @media all and (max-width: 641px) {
+    width: 120%;
+  }
+  @media all and (max-width: 480px) {
+    width: 60%;
   }
 `;
 const GuestList = styled.li`
@@ -141,6 +144,8 @@ const GuestList = styled.li`
   @media all and (max-width: 1280px) {
     margin-bottom: 25px;
   }
+  @media all and (max-width: 640px) {
+  }
 `;
 
 const GuestLeft = styled.div`
@@ -150,11 +155,6 @@ const GuestLeft = styled.div`
   padding: 10px 0 10px 10px;
   border-radius: 17px;
   background-color: #fff;
-  @media all and (max-width: 1280px) {
-    padding-left: 15px;
-    justify-content: flex-start;
-    width: 85%;
-  }
 `;
 const GuestPicSpan = styled.span`
   display: inline-block;
